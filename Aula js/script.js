@@ -1,29 +1,66 @@
-// let nome = prompt("Digite seu nome:")
-// let idade = prompt("Informe sua idade")
-// alert("Meu nome é " + nome + " e tenho " + idade + "anos")
-// console.log(" o usuário informou o nome " + nome + " e a idade " + idade)
+// Objetos
+// let pessoa = {
+//     nome: "Ana",
+//     idade: 25,
+//     falar: function(){
+//         console.log("Olá")
+//     }
+// }
 
-// const numero1 = Number(prompt("Informe o primeiro número"))
-// const numero2 = Number(prompt("Informe o segundo número"))
-// const 
+// console.log(pessoa.nome)
+// pessoa.idade = 26
+// console.log(pessoa.idade)
+// console.log(pessoa.falar)
 
-function somar(numero1, numero2){
-    return numero1 + numero2;
+// //Arrays
+// let frutas = ["maçã", "banana", "uva"];
+// frutas.push("laranja");
+// frutas.push("abacaxi");
+
+// Atividade
+
+let livro = {
+    titulo: "Battle Royale",
+    autor: "Koushun Takami",
+    anoPublicacao: 1999,
+    apresentar: function () {
+        return
+        "O livro " + this.titulo + ", escrito pelo autor "
+            + this.autor + " foi originalmente finalizado em 1996, mas sua primeira publicação ocorreu em "
+            + this.anoPublicacao;
+
+    }
 }
 
-function subtrair(numero1, numero2){
-    return numero1 - numero2;
+console.log(livro.apresentar)
+
+let numeros = [0, 1, 2, 3, 4]
+
+function somarPrimeiroUltimo(numeros) {
+    return numeros[0] + numeros[numeros.lenght - 1];
 }
 
-function multiplicar(numero1, numero2){
-    return numero1 * numero2;
+console.log(somarPrimeiroUltimo(numeros))
+
+//
+
+let aluno = {
+    nome: "Ana",
+    idade: 25,
+    notas: [7.0, 9.2, 8.6],
+    mostrarDados: function () {
+        return "Nome: " + nome;
+    }
 }
 
-function dividir(numero1, numero2){
-    return numero1 / numero2;
+function calcularMedia(x) {
+    for (let i = 0; i < this.notas.lenght; i++) {
+        soma += this.notas.lenght[i];
+    }
+    return soma / this.notas.lenght;
 }
 
-console.log("Soma: " + somar(2,8))
-console.log("Subtração: " + subtrair(2,8))
-console.log("Multiplicação: " + multiplicar(2,8))
-console.log("Divisão: " + dividir(2,8))
+function classificarmedia(x) {
+
+}
+
